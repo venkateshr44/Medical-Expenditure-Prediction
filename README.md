@@ -10,6 +10,7 @@ Click [here](https://www.kaggle.com/mirichoi0218/insurance) for Kaggle dataset.
 * Body Mass Index
 * Number of Childrens
 * Smoking
+* Region
 
 ## Deployment
 
