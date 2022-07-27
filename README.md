@@ -14,6 +14,6 @@ Click [here](https://www.kaggle.com/mirichoi0218/insurance) for Kaggle dataset.
 
 ## Deployment
 
-The model is deployed on Heroku platform. It is written in Python and was built using gunicorn server.
+The model is deployed on Heroku platform.
 
 Link: [https://medicalprediction.herokuapp.com](https://medicalprediction.herokuapp.com/)
