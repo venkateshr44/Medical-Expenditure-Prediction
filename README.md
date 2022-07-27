@@ -10,3 +10,9 @@ Click [here](https://www.kaggle.com/mirichoi0218/insurance) for Kaggle dataset.
 * Body Mass Index
 * Number of Childrens
 * Smoking
+
+## Deployment
+
+The model is deployed on Heroku platform. It is written in Python and was built using gunicorn server.
+
+Link: [https://covid-project-api.herokuapp.com/](https://covid-project-api.herokuapp.com/)
