@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h1>Predictive analysis</h1>
+            <h2>Age</h2><input id="first" name="age" type="number ">
+            <h2>Body Mass Index</h2><input id="second" name="BMI" required="required">
+            <h2>Number of Children</h2><input id="third" name="children" required="required">
+            <h2>Sex</h2><select name="sex_male" id="sex" required="required">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+	    <br><br>
+            <h2>Smoker</h2><select name="smoker_yes" id="smoker" required="required">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+	    <br><br>
+            <h2>Region</h2><select name="region_southwest" id="region" required="required">
+                <option value="SouthEast">SouthEast</option>
+                <option value="SouthWest">SouthWest</option>
+                <option value="NorthEast">NorthEast</option>
+                <option value="NorthWest">NorthWest</option>    
+            </select>
+	    <br>
+            <br><br><button id="sub" type="submit ">Calculate the Expenditure</button>
+        </form>
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+	    background-image: url('image.jpg');
+	    background-repeat: no-repeat;
+	    background-size: 1350px 1000px;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #sex {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #sex:hover {
+            background-color: coral;
+        }
+        
+        #smoker {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #smoker:hover {
+            background-color: coral;
+        }
+        
+        #region {
+            width: 150px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #region:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 100px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+    </style>
+</body>
+
+</html>
