@@ -10,7 +10,7 @@
 <body>
     <div style="color:blue">
         <form action="{{ url_for('predict')}}" method="post">
-            <h1>Predictive analysis</h1>
+            <h1>Medical Expenditure Prediction</h1>
             <h2>Age</h2><input id="first" name="age" type="number ">
             <h2>Body Mass Index</h2><input id="second" name="BMI" required="required">
             <h2>Number of Children</h2><input id="third" name="children" required="required">
@@ -35,7 +35,7 @@
         </form>
 
 
-        <br><br><h3>{{ prediction_text }}<h3>
+        <br><h1>{{ prediction_text }}<h1>
     </div>
 
 
