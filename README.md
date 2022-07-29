@@ -12,8 +12,3 @@ Click [here](https://www.kaggle.com/mirichoi0218/insurance) for Kaggle dataset.
 * Smoking
 * Region
 
-## Deployment
-
-The model is deployed on Heroku platform.
-
-Link: [https://medicalprediction.herokuapp.com](https://medicalprediction.herokuapp.com/)
